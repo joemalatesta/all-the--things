@@ -2,7 +2,7 @@ import { Routes, Route } from 'react-router-dom'
 import ManliestThings from './pages/ManliestThings/ManliestThings'
 import StyledThings from './pages/StyledThings/StyledThings'
 import SillyThings from './pages/SillyThings/SIllyThings'
-import ZoomThings from './pages/ZoomThings/ZoomThings'
+import EnergyThings from './pages/EnergyThings/EnergyThings'
 import Landing from './pages/Landing/Landing'
 
 const App = () => {
@@ -63,11 +63,11 @@ const App = () => {
     },
   ]
 
-  const joesThings = [
+  const iansThings = [
     {
-      name: "Backgrounds",
-      image: "https://wallpaperaccess.com/full/2267933.png",
-      attributes: ["clownlike", "goofy", "fun", "Why be serious?", "laugh!"]
+      name: "coffee",
+      image: "https://imgs.xkcd.com/comics/coffee.png",  
+      attributes: ["efficient", "tasty", "hot", "cold"],
     },
   ]
 
@@ -88,8 +88,8 @@ const App = () => {
         element={<SillyThings things={huntersThings} />}
       />
       <Route
-        path="/the-zoom-things"
-        element={<ZoomThings things={joesThings} />}
+        path="/the-energy-things"
+        element={<EnergyThings things={iansThings} />}
       />
     </Routes>
   )
