@@ -4,6 +4,7 @@ import StyledThings from './pages/StyledThings/StyledThings'
 import SillyThings from './pages/SillyThings/SIllyThings'
 import EnergyThings from './pages/EnergyThings/EnergyThings'
 import Landing from './pages/Landing/Landing'
+import ZoomThings from './pages/ZoomThings/ZoomThings'
 
 const App = () => {
   const bensThings = [
@@ -63,14 +64,20 @@ const App = () => {
     },
   ]
 
-  const iansThings = [
+   const iansThings = [
     {
       name: "coffee",
       image: "https://imgs.xkcd.com/comics/coffee.png",  
       attributes: ["efficient", "tasty", "hot", "cold"],
     },
   ]
-
+   const joesThings = [
+    {
+      name: "Backgrounds",
+      image:"",
+      attributes: [],
+    },
+  ]
 
   return (
     <Routes>
@@ -91,6 +98,10 @@ const App = () => {
       <Route
         path="/the-energy-things"
         element={<EnergyThings things={iansThings} />}
+      />
+      <Route
+        path="/the-zoom-things"
+        element={<ZoomThings things={joesThings} />}
       />
     </Routes>
   )
