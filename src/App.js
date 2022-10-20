@@ -73,9 +73,9 @@ const App = () => {
   ]
    const joesThings = [
     {
-      name: "Backgrounds",
-      image:"",
-      attributes: [],
+      name: "Burgers",
+      image:"burger.png",
+      attributes: ['yummy', 'yummy'],
     },
   ]
 
