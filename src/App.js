@@ -2,6 +2,7 @@ import { Routes, Route } from 'react-router-dom'
 import ManliestThings from './pages/ManliestThings/ManliestThings'
 import StyledThings from './pages/StyledThings/StyledThings'
 import SillyThings from './pages/SillyThings/SIllyThings'
+import ZoomThings from './pages/ZoomThings/ZoomThings'
 import Landing from './pages/Landing/Landing'
 
 const App = () => {
@@ -62,6 +63,14 @@ const App = () => {
     },
   ]
 
+  const joesThings = [
+    {
+      name: "Backgrounds",
+      image: "https://wallpaperaccess.com/full/2267933.png",
+      attributes: ["clownlike", "goofy", "fun", "Why be serious?", "laugh!"]
+    },
+  ]
+
   return (
     <Routes>
       {/* All the <Route> components should live here */}
@@ -77,6 +86,10 @@ const App = () => {
       <Route
         path="/the-silly-things"
         element={<SillyThings things={huntersThings} />}
+      />
+      <Route
+        path="/the-zoom-things"
+        element={<ZoomThings things={joesThings} />}
       />
     </Routes>
   )
