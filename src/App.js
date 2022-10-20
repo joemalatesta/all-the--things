@@ -75,7 +75,7 @@ const App = () => {
     {
       name: "Backgrounds",
       image:"",
-      attributes: [],
+      attributes: ['silly', 'fun'],
     },
   ]
 
